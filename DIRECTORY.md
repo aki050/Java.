@@ -1,43 +1,25 @@
-# Project Structure
+# プロジェクト構成（日本語）
 
-## src
+## src ディレクトリ
 
 - 📁 **main**
   - 📁 **java**
     - 📁 **com**
       - 📁 **thealgorithms**
-        - 📁 **audiofilters**
-          - 📄 [EMAFilter](src/main/java/com/thealgorithms/audiofilters/EMAFilter.java)
-          - 📄 [IIRFilter](src/main/java/com/thealgorithms/audiofilters/IIRFilter.java)
-        - 📁 **backtracking**
-          - 📄 [AllPathsFromSourceToTarget](src/main/java/com/thealgorithms/backtracking/AllPathsFromSourceToTarget.java)
-          - 📄 [ArrayCombination](src/main/java/com/thealgorithms/backtracking/ArrayCombination.java)
-          - 📄 [Combination](src/main/java/com/thealgorithms/backtracking/Combination.java)
-          - 📄 [CombinationSum](src/main/java/com/thealgorithms/backtracking/CombinationSum.java)
-          - 📄 [CrosswordSolver](src/main/java/com/thealgorithms/backtracking/CrosswordSolver.java)
-          - 📄 [FloodFill](src/main/java/com/thealgorithms/backtracking/FloodFill.java)
-          - 📄 [KnightsTour](src/main/java/com/thealgorithms/backtracking/KnightsTour.java)
-          - 📄 [MColoring](src/main/java/com/thealgorithms/backtracking/MColoring.java)
-          - 📄 [MazeRecursion](src/main/java/com/thealgorithms/backtracking/MazeRecursion.java)
-          - 📄 [NQueens](src/main/java/com/thealgorithms/backtracking/NQueens.java)
-          - 📄 [ParenthesesGenerator](src/main/java/com/thealgorithms/backtracking/ParenthesesGenerator.java)
-          - 📄 [Permutation](src/main/java/com/thealgorithms/backtracking/Permutation.java)
-          - 📄 [PowerSum](src/main/java/com/thealgorithms/backtracking/PowerSum.java)
-          - 📄 [SubsequenceFinder](src/main/java/com/thealgorithms/backtracking/SubsequenceFinder.java)
-          - 📄 [SudokuSolver](src/main/java/com/thealgorithms/backtracking/SudokuSolver.java)
-          - 📄 [UniquePermutation](src/main/java/com/thealgorithms/backtracking/UniquePermutation.java)
-          - 📄 [WordPatternMatcher](src/main/java/com/thealgorithms/backtracking/WordPatternMatcher.java)
-          - 📄 [WordSearch](src/main/java/com/thealgorithms/backtracking/WordSearch.java)
-        - 📁 **bitmanipulation**
-          - 📄 [BcdConversion](src/main/java/com/thealgorithms/bitmanipulation/BcdConversion.java)
-          - 📄 [BinaryPalindromeCheck](src/main/java/com/thealgorithms/bitmanipulation/BinaryPalindromeCheck.java)
-          - 📄 [BitRotate](src/main/java/com/thealgorithms/bitmanipulation/BitRotate.java)
-          - 📄 [BitSwap](src/main/java/com/thealgorithms/bitmanipulation/BitSwap.java)
-          - 📄 [BitwiseGCD](src/main/java/com/thealgorithms/bitmanipulation/BitwiseGCD.java)
-          - 📄 [BooleanAlgebraGates](src/main/java/com/thealgorithms/bitmanipulation/BooleanAlgebraGates.java)
-          - 📄 [ClearLeftmostSetBit](src/main/java/com/thealgorithms/bitmanipulation/ClearLeftmostSetBit.java)
-          - 📄 [CountBitsFlip](src/main/java/com/thealgorithms/bitmanipulation/CountBitsFlip.java)
-          - 📄 [CountLeadingZeros](src/main/java/com/thealgorithms/bitmanipulation/CountLeadingZeros.java)
+        - ここに各分野ごとのパッケージがあり、多数のアルゴリズムが実装されています。
+        - 例：
+          - 📁 **audiofilters**（オーディオフィルタ関連）
+            - 📄 EMAFilter, IIRFilter など
+          - 📁 **backtracking**（バックトラッキングアルゴリズム）
+            - AllPathsFromSourceToTarget, NQueens, SudokuSolver など
+          - 📁 **bitmanipulation**（ビット操作アルゴリズム）
+            - BcdConversion, BitRotate, CountBitsFlip など
+        - ...（他にも多数のパッケージ・ファイルがあります）
+
+---
+
+各パッケージには、分野ごとに多くのJavaファイルが含まれています。
+詳細なファイル一覧は、各パッケージのディレクトリをご覧ください。
           - 📄 [CountSetBits](src/main/java/com/thealgorithms/bitmanipulation/CountSetBits.java)
           - 📄 [FindNthBit](src/main/java/com/thealgorithms/bitmanipulation/FindNthBit.java)
           - 📄 [FirstDifferentBit](src/main/java/com/thealgorithms/bitmanipulation/FirstDifferentBit.java)

@@ -1,23 +1,22 @@
 package com.thealgorithms.audiofilters;
 
 /**
- * Exponential Moving Average (EMA) Filter for smoothing audio signals.
+ * 音声信号を平滑化するための指数移動平均（EMA）フィルタ。
  *
- * <p>This filter applies an exponential moving average to a sequence of audio
- * signal values, making it useful for smoothing out rapid fluctuations.
- * The smoothing factor (alpha) controls the degree of smoothing.
+ * <p>このフィルタは、音声信号の値列に指数移動平均を適用し、急激な変動をなめらかにするのに役立ちます。
+ * 平滑化係数（alpha）によって平滑化の度合いを調整します。
  *
- * <p>Based on the definition from
- * <a href="https://en.wikipedia.org/wiki/Moving_average">Wikipedia link</a>.
+ * <p>定義は
+ * <a href="https://ja.wikipedia.org/wiki/%E7%A7%AF%E5%88%86%E5%B9%B3%E5%9D%87">Wikipedia（移動平均）</a>に基づきます。
  */
 public class EMAFilter {
     private final double alpha;
     private double emaValue;
     /**
-     * Constructs an EMA filter with a given smoothing factor.
+     * 指定した平滑化係数でEMAフィルタを生成します。
      *
-     * @param alpha Smoothing factor (0 < alpha <= 1)
-     * @throws IllegalArgumentException if alpha is not in (0, 1]
+     * @param alpha 平滑化係数（0 < alpha <= 1）
+     * @throws IllegalArgumentException alphaが(0, 1]の範囲外の場合
      */
     public EMAFilter(double alpha) {
         if (alpha <= 0 || alpha > 1) {
@@ -27,10 +26,10 @@ public class EMAFilter {
         this.emaValue = 0.0;
     }
     /**
-     * Applies the EMA filter to an audio signal array.
+     * 音声信号配列にEMAフィルタを適用します。
      *
-     * @param audioSignal Array of audio samples to process
-     * @return Array of processed (smoothed) samples
+     * @param audioSignal 処理対象の音声サンプル配列
+     * @return 平滑化されたサンプル配列
      */
     public double[] apply(double[] audioSignal) {
         if (audioSignal.length == 0) {
